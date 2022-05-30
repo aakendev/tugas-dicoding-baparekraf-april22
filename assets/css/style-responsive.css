@@ -1,0 +1,210 @@
+@media screen and (min-width: 1440px) {
+  body {
+    padding-top: 90px;
+  }
+  .wrapper {
+    height: inherit;
+    margin: 0 auto;
+    max-width: 2560px;
+  }
+
+  header {
+    height: 70px;
+  }
+  header .wrapper,
+  main .wrapper,
+  footer .wrapper {
+    padding: 0 40px;
+  }
+  header .logo-title p {
+    line-height: 70px;
+    font-size: 20px;
+  }
+  header nav {
+    display: block;
+    font-size: 20px;
+  }
+  header nav ul li {
+    min-width: 150px;
+    margin-left: 20px;
+  }
+  header nav ul li a {
+    font-size: inherit;
+    line-height: 70px;
+  }
+
+  header .logo-title {
+    font-size: 20px;
+  }
+  header .logo-menu {
+    display: none;
+  }
+
+  header .menu-bar {
+    display: none;
+  }
+
+  main {
+    margin-bottom: 40px;
+  }
+  main .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  main .wrapper aside {
+    padding: 20px;
+    margin-top: 80px;
+  }
+
+  main aside {
+    order: 1;
+    flex-basis: 300px;
+    height: 700px;
+    margin-left: 20px;
+  }
+  main aside img {
+    width: 250px;
+  }
+  main .wrapper aside .top {
+    flex-direction: column;
+  }
+  main .wrapper aside .header-details .top .top-blink {
+    margin-top: 20px;
+  }
+  main .wrapper aside .header-details .top .top-blink,
+  main .wrapper aside .header-details .top .top-content {
+    font-size: 26px;
+  }
+
+  main .wrapper aside .header-details .top .top-blink {
+    margin-right: 0;
+  }
+  main .wrapper aside .header-details .top .top-content {
+    margin-left: 0;
+  }
+  main .wrapper aside .header-icon {
+    margin-top: 40px;
+  }
+  main .wrapper aside .header-details .header-icon .iconify-inline {
+    font-size: 60px;
+  }
+  main .article-wrapper {
+    order: 0;
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  main .article-wrapper article {
+    padding: 20px;
+  }
+  main .article-wrapper article h1 {
+    font-size: 30px;
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 7.5px 5px;
+  }
+  main .article-wrapper article h3 {
+    font-size: 28px;
+  }
+  main .article-wrapper article h5 {
+    font-size: 26px;
+  }
+  main .article-wrapper article h6 {
+    font-size: 24px;
+  }
+  main .article-wrapper article p {
+    font-size: 20px;
+  }
+
+  main .article-wrapper #portfolio a {
+    font-size: 30px;
+    width: 400px;
+  }
+  main .article-wrapper #portfolio a .iconify-inline {
+    font-size: 4rem;
+  }
+
+  main .article-wrapper #contactme form .form-control {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  main .article-wrapper #contactme form .form-control label {
+    flex-basis: 400px;
+  }
+  main .article-wrapper #contactme form .form-control input,
+  main .article-wrapper #contactme form .form-control select,
+  main .article-wrapper #contactme form .form-control textarea {
+    font-size: 26px;
+    padding: 10px 20px;
+  }
+
+  footer {
+    height: 60px;
+  }
+  footer .wrapper p {
+    line-height: 60px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .wrapper {
+    height: inherit;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  header nav {
+    display: block;
+  }
+
+  header .logo-title {
+    font-size: 18px;
+  }
+  header .logo-menu {
+    display: none;
+  }
+
+  header .menu-bar {
+    display: none;
+  }
+
+  main .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  main .wrapper aside {
+    margin-top: 80px;
+  }
+
+  main aside {
+    order: 1;
+    flex-basis: 250px;
+    height: 315px;
+    margin-left: 20px;
+  }
+  main .wrapper aside .top {
+    flex-direction: column;
+  }
+  main .wrapper aside .header-details .top .top-blink {
+    margin-right: 0;
+  }
+  main .wrapper aside .header-details .top .top-content {
+    margin-left: 0;
+  }
+  main .article-wrapper {
+    order: 0;
+    flex: 1;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    height: inherit;
+    margin: 0 auto;
+    max-width: 1023px;
+  }
+}

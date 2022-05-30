@@ -1,0 +1,272 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  height: inherit;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 425px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 999;
+}
+header .wrapper {
+  position: relative;
+  display: flex;
+  padding: 0 10px;
+  background-color: #55f;
+  color: #fff;
+}
+header .wrapper .logo-menu {
+  cursor: pointer;
+}
+header .wrapper .logo-menu:hover .iconify {
+  transform: scale(1.25);
+  transform: rotate(90deg);
+}
+header .wrapper .logo-menu:hover ~ .menu-bar {
+  display: block;
+}
+
+header .wrapper .menu-bar {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: white;
+}
+header .wrapper .menu-bar:hover {
+  display: block;
+}
+header .wrapper .menu-bar ul {
+  list-style: none;
+  min-width: 200px;
+}
+header .wrapper .menu-bar ul li a {
+  display: block;
+  text-align: center;
+  padding: 10px 0px;
+}
+header .wrapper .menu-bar ul li a:hover {
+  background-color: #55f;
+  color: #fff;
+}
+
+header .logo-title p {
+  display: block;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+header nav {
+  margin-left: auto;
+  display: none;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+header nav ul li {
+  margin-left: 10px;
+  min-width: 125px;
+}
+header nav ul li:hover a {
+  background-color: #fff;
+  color: #55f;
+}
+header nav ul li a {
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+header .logo-menu {
+  margin-left: auto;
+  line-height: 50px;
+  font-size: 2rem;
+}
+
+main .wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+main .wrapper aside {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  background-color: #000;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #555;
+  padding: 10px;
+}
+main .wrapper aside .header-details .top {
+  display: flex;
+  color: #fff;
+  font-size: 14px;
+}
+
+main .wrapper aside .header-details .top:nth-child(1) {
+  margin-top: 10px;
+}
+main .wrapper aside .header-details .top:nth-child(2) {
+  margin-bottom: 10px;
+}
+main .wrapper aside .header-details .top .top-blink {
+  margin-right: auto;
+  font-weight: 900;
+}
+main .wrapper aside .header-details .top .top-content {
+  margin-left: auto;
+}
+main .wrapper aside .header-icon {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+main .wrapper aside .header-icon .iconify {
+  font-size: 2rem;
+  color: #fff;
+}
+main .wrapper aside .header-icon a:hover .iconify {
+  transform: scale(1.5);
+}
+
+main aside img {
+  margin: 0 auto;
+  display: block;
+  width: 150px;
+  border-radius: 50%;
+  border: 2.5px solid #55f;
+  box-shadow: 5px 5px 5px #555;
+}
+
+main .article-wrapper #portfolio {
+  text-align: center;
+  color: #fff;
+}
+main .article-wrapper #portfolio a {
+  color: inherit;
+  background-color: #000;
+  display: block;
+  border-radius: 10px;
+  padding: 2.5px;
+  margin: 0 auto;
+  width: 200px;
+}
+main .article-wrapper #portfolio a .iconify {
+  color: inherit !important;
+  font-size: 2rem;
+}
+main .article-wrapper #contactme form {
+  display: flex;
+  flex-direction: column;
+}
+main .article-wrapper article {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #55f;
+  color: #fff;
+  box-shadow: 5px 5px 5px #555;
+}
+main .article-wrapper article h1 {
+  text-align: center;
+  padding-bottom: 2.5px;
+  border-bottom: 2px solid #fff;
+  width: 200px;
+  margin: 0 auto 20px auto;
+  font-size: 18px;
+  background-color: #000;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+main .article-wrapper article p {
+  text-align: justify;
+  font-size: 14px;
+}
+main #contactme form {
+  font-size: 14px;
+}
+main #contactme form .form-control {
+  display: flex;
+  margin-bottom: 10px;
+}
+main #contactme form .form-control label {
+  flex-basis: 100px;
+}
+main #contactme form .form-control input,
+main #contactme form .form-control select,
+main #contactme form .form-control textarea {
+  flex: 1;
+  width: 100%;
+  padding: 5px 7.5px;
+  font-size: 14px;
+}
+main #contactme form button {
+  position: relative;
+  width: 150px;
+  padding: 5px 7.5px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0 5px 2.5px #fff;
+}
+main #contactme form button:hover {
+  border: 2px solid #fff;
+}
+main #contactme form button:active {
+  top: 5px;
+  box-shadow: none;
+}
+
+main #aboutme2,
+main #experience2,
+main #education2,
+main #organization2,
+main #portfolio2,
+main #contactme2 {
+  content: "";
+  padding: 40px;
+  background-color: #fff;
+}
+
+footer {
+  height: 30px;
+}
+footer .wrapper {
+  padding: 0 10px;
+  background-color: #55f;
+  color: #fff;
+}
+footer p {
+  text-align: center;
+  line-height: 30px;
+}
